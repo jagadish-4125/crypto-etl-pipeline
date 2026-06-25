@@ -1,0 +1,21 @@
+2026-06-25 17:58:57 | PIPELINE | INFO | ============================================================
+2026-06-25 17:58:57 | PIPELINE | INFO | STARTING ETL PIPELINE: Cryptocurrency Market Data
+2026-06-25 17:58:57 | PIPELINE | INFO | ============================================================
+2026-06-25 17:58:57 | PIPELINE | INFO | STEP 1/3: EXTRACT
+2026-06-25 17:58:57 | EXTRACT | INFO | Requesting data from API (attempt 1/3)...
+2026-06-25 17:58:57 | EXTRACT | INFO | Successfully extracted 100 records from API.
+2026-06-25 17:58:57 | EXTRACT | INFO | Raw DataFrame shape: (100, 28)
+2026-06-25 17:58:57 | PIPELINE | INFO | STEP 2/3: TRANSFORM
+2026-06-25 17:58:57 | TRANSFORM | INFO | Starting transformation...
+2026-06-25 17:58:57 | TRANSFORM | INFO | Transformation complete. Final shape: (100, 21)
+2026-06-25 17:58:57 | PIPELINE | INFO | STEP 3/3: LOAD
+2026-06-25 17:58:57 | LOAD | INFO | Connecting to PostgreSQL...
+2026-06-25 17:58:57 | LOAD | INFO | Database connection successful.
+2026-06-25 17:58:57 | LOAD | INFO | Schema verified/created successfully.
+2026-06-25 17:58:57 | LOAD | INFO | Upserted 100 rows into crypto_market_data.
+2026-06-25 17:58:57 | LOAD | INFO | Appended 100 rows into crypto_market_data_history.
+2026-06-25 17:58:57 | LOAD | INFO | Load stage complete.
+2026-06-25 17:58:57 | PIPELINE | INFO | ============================================================
+2026-06-25 17:58:57 | PIPELINE | INFO | PIPELINE COMPLETED SUCCESSFULLY in 0.66s
+2026-06-25 17:58:57 | PIPELINE | INFO | Rows processed: 100
+2026-06-25 17:58:57 | PIPELINE | INFO | ============================================================
